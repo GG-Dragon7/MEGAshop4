@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <title>GameZона</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Шапка сайта (Header) -->
+  <header class="header">
+    <img src="image/icon.webp" style="height: 100px;">
+    <div class="logo">
+      <!-- Логотип магазина - пока просто текст, позже можно заменить на изображение -->
+      <h1 style="color:  rgb(18, 182, 89);">GameZона</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(44, 44, 44); color: rgb(44, 44, 44); height: 10px;">
+      <div class="container-fluid" style="background-color: rgb(44, 44, 44);">
+        <a class="navbar-brand" href="#" style="color: rgb(18, 182, 89); background-color: rgb(44, 44, 44)">Главная</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"  >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html" style="color:  rgb(18, 182, 89);">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html" style="color:  rgb(18, 182, 89);">Регистрация</a>
+            </li>
+            
+            
+          </ul>
+          <form class="d-flex" role="search">
+            
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="cart" style="cursor: pointer; color:rgb(18, 182, 89);" >
+      🛒 Корзина (<span class="cart-count">0</span>)
+    </div>
+  </header>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/ZZZ.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:rgb(18, 182, 89)">Самые популярные и новые игры</h5>
+          <p style="color:rgb(18, 182, 89)">(только у нас!)</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/nfs.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:rgb(18, 182, 89)">Самые низкие цены на игры любого жанра</h5>
+          <p style="color:rgb(18, 182, 89)">(только у нас!)</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/i.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:rgb(18, 182, 89)">Самой большой каталог игр</h5>
+          <p style="color:rgb(18, 182, 89)">(только у нас!)</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Основное содержимое страницы (Main Content) -->
+  <main class="main-content">
+    <section class="products">
+      <h2 style="color: rgb(18, 182, 89);">Наши товары</h2>
+      <div class="product-list">
+        <!-- Карточки товаров будут добавляться сюда JavaScript -->
+      </div>
+      
+      <div class="product-list">
+        <!-- Пока оставляем пустым - товары добавим позже -->
+        
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <!-- Боковая панель для фильтров -->
+      <h3 style="color:rgb(18, 182, 89) ;">Фильтры</h3>
+      <div class="filters">
+        <input type="text" id="search-input" style="margin-bottom: 10px; 
+        height: 35px; background-color: rgb(18, 182, 89);" placeholder="Поиск товаров..." />
+
+        <!-- Выпадающий список для сортировки -->
+        <select id="sort-select" style="margin-bottom: 10px; 
+        height: 35px; background-color: rgb(18, 182, 89);">
+          <option value="default">Без сортировки</option>
+          <option value="price-asc">Цена: по возрастанию</option>
+          <option value="price-desc">Цена: по убыванию</option>
+          <option value="name-asc">Название: A→Я</option>
+          <option value="name-desc">Название: Я→A</option>
+        </select>
+      </div>
+    </aside>
+  </main>
+  
+
+  <!-- Подвал сайта (Footer) -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p style="color:rgb(18, 182, 89)">© 2025 GameZона - Магазин компьютерных игр</p>
+      <p style="color:rgb(18, 182, 89)">Телефон: +7 (132) 465-79-80</p>
+      <p style="color:rgb(18, 182, 89)">Email: info@GameZона.ru</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="products/product.css">
+  <title>Корзина</title>
+</head>
+<body>
+  <header class="header">
+    <h1 style="color: rgb(18, 182, 89) ;">GameZона - Корзина</h1>
+    <a href="index.html">← Назад в магазин</a>
+  </header>
+
+  <main class="cart-container">
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <h3 style="color: rgb(18, 182, 89) ;">Итого: <span id="cart-total">0</span> ₽</h3>
+      <button id="checkout-btn" class="checkout-button" style="background-color: #2b2b2b; color:  rgb(18, 182, 89);">Оформить заказ</button>
+    </div>
+  </main>
+
+
+  <div id="order-modal" class="model">
+    <div class="modal-content" style="background-color: #2b2b2b;">
+      <h2 style="color: rgb(18, 182, 89);">Оформление заказа</h2>
+      <form id ="order-form">
+        <input type="text" name="name" placeholder="Ваше имя" style="background-color: rgb(73, 73, 73);">
+        <input type="tel" name="phone" placeholder="Телефон" style="background-color: rgb(73, 73, 73);">
+        <input type="email" name="email" placeholder="Email" style="background-color: rgb(73, 73, 73);">
+        <button type="submit" onclick="zakaz()" style="color: rgb(18, 182, 89); background-color: rgb(73, 73, 73);">Заказать</button>
+        <button id="go" style="color: rgb(18, 182, 89); background-color: rgb(73, 73, 73);">Продолжить покупки</button>
+        
+      </form>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
+
+
